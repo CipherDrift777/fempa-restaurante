@@ -313,6 +313,7 @@ section {
 
 .row h5 {
     margin-top: 1.6rem;
+    font-family: var(--fuente-secundaria);
     font-size: var(--tamaño-p);
     font-weight: 500;
     margin-bottom: .7rem;
