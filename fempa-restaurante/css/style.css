@@ -18,9 +18,9 @@
     --otro-color: #667;
 
 
-    --tamaño-h1: 5.5rem;
-    --tamaño-h2: 2.8rem;
-    --tamaño-p: 1.8rem;
+    --tamaño-h1: 4.5rem;
+    --tamaño-h2: 2.2rem;
+    --tamaño-p: 1.4rem;
 }
 
 html {
@@ -81,7 +81,7 @@ header {
 
 .barra-contenido a{
     display: inline-block;
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     color: var(--color-texto);
     transition: all .3s ease;
 }
@@ -175,6 +175,7 @@ section {
 }
 
 .centrar-texto h2 {
+    margin-top: 1rem;
     font-size: var(--tamaño-h2);
     font-weight: 600;
 }
@@ -221,4 +222,61 @@ section {
 .col:hover{
     transform: scale(1.04) translateY(-4px);
     border: 1px solid var(--main-color);
+}
+
+.banner {
+   padding:  1rem 10% 1rem;
+}
+
+.banner-contenido {
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.banner-in {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.banner-in h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.banner-in h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.banner-boton {
+    padding: 1rem 2.7rem;
+    display: inline-block;
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all .6s ease;
+}
+
+.banner-boton:hover{
+    background-color: var(--main-color);
 }
